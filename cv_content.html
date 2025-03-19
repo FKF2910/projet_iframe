@@ -1,0 +1,99 @@
+<!DOCTYPE html >
+<html lang="fr"> 
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Cv</title>
+        <style>
+            #cv {
+                width: 100%;
+                padding: 10px;
+                display: flex;
+                flex-direction: column;
+            }
+    
+            #civil-state-container {
+                display: flex;
+                flex-direction: row;
+                width: 90%;
+            }
+    
+            #civil-state {
+                flex: 60%;
+                margin: 20px;
+                padding: 10px;
+            }
+    
+            #photo {
+                margin-left: 0;
+            }
+            div {
+                margin: 20px;
+                padding: 10px;
+            
+            }
+    
+            div ul{
+                list-style-type:disc;
+                margin-left: 20px; /* Décalage vers la droite */
+                
+            }
+            div ul li {
+                line-height: 40px;
+                
+            }
+    
+            .skills p, .education p, .hobbies_cv p {
+                width: 90%;
+                border-bottom: 1px solid #333;
+                font-size: 28px;
+    
+            }
+        </style>
+    </head>
+    <body>
+        <main id="cv">
+    
+            <div id="civil-state-container">
+                <div id="civil-state">
+                    <p>Nom: Fatou Kiné Fofana</p>
+                    <p>Adresse: 16 Rue Michel Servet, 42000 St-Etienne</p>
+                    <p>Email: fatoukinefofana0@gmail.com</p>
+                    <p>Tel: 07 60 36 90 48</p>
+                    <p>LinkedIn: <a href="https://linkedin.com/in/fofana-fatou-kin%C3%A9-396857240">Lien vers mon compte</a></p>
+                </div>
+                <div id="photo">
+                    <img src="photo_cv.jpg" alt="Ma photo" >
+                </div>
+            </div>
+        
+            <div class="education">
+                <p>Education</p>
+                <ul>
+                    <li>BAC série Spécialité Maths-Physique Mention Bien</li>
+                    <li>Prépa MPSI puis MP</li>
+                    <li>Ingénieur en formation à Telecom st-Etienne</li>
+                </ul>
+            </div>
+        
+            <div class="skills">
+                <p>Skills</p>
+                <ul>
+                    <li>C++</li>
+                    <li>HTML CSS</li>
+                    <li>POO</li>
+                </ul>
+            </div>
+        
+            <div class="hobbies_cv">
+                <p>Hobbies</p>
+                <ul>
+                    <li>Sports, lecture, musique</li>
+                    <li>Voyages et découverte</li>
+                    <li>Tech et programmation</li>
+                </ul>
+            </div>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;    
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    width: 100%;
+    background-color: white;
+}
+
+/* Styles globaux pour les iframes */
+iframe {
+    border: none; 
+    display: block; 
+    width: 100%; 
+}
+

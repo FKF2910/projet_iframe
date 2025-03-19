@@ -1,0 +1,138 @@
+<!DOCTYPE html >
+<html lang="fr"> 
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> resources</title>
+        <style>
+            #downloads, #skills, #media {
+            padding: 20px;
+            }
+            #downloads p, #skills p , #media p{
+                width: 90%;
+                font-size: 28px;
+                border-bottom: 1px solid #333;
+            }
+    
+            #downloads ul {
+                list-style-type: disc;
+                padding-left: 20px;
+            }
+    
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 10px;
+            }
+    
+            table, th, td {
+                border: 1px solid darkgrey;
+            }
+    
+            th, td {
+                padding: 10px;
+                text-align: left;
+            }
+    
+            #media {
+                margin-top: 20px;    
+            }
+    
+    
+            .media-header {
+                display: flex;
+                justify-content: space-between;
+                
+                
+            }
+            .media-content {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                
+                
+            }
+    
+            #video, #code-sample {
+                width: 48%;
+            }
+    
+            #video video {
+                width: 100%;
+                padding: 10px;
+    
+            }
+    
+            #code-sample pre {
+                background-color: #f4f4f4;
+                padding: 10px;
+                margin: 10px;
+                overflow-x: auto;
+                height: 175px;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+    
+            <div id="downloads">
+                <p>Downloads</p>
+                <ul>
+                    <li><a href="cv_fkf.pdf" download target="_blank">My CV (pdf)</a></li>
+                    <li><a href="sample.zip" download target="_blank">A zip file</a></li>
+                    <li><a href="photo_cv.jpg" download target="_blank">My CV picture</a></li>
+                </ul>
+            </div>
+        
+            <div id="skills">
+                <p>My skills</p>
+                <table>
+                    <tr>
+                        <th>Skill</th>
+                        <th>Level</th>
+                    </tr>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Intermediate</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>Intermediate</td>
+                    </tr>
+                    <tr>
+                        <td>C++</td>
+                        <td>Beginner</td>
+                    </tr>
+                    <tr>
+                        <td>POO</td>
+                        <td>Intermediate</td>
+                    </tr>
+                </table>
+            </div>
+        
+            <div id="media">
+                <div class="media-header">
+                    <p>Video</p>
+                    <p>Code sample</p>
+                </div>
+                <div class="media-content">
+                    <div id="video">
+                        <video controls>
+                            <source src="video.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div id="code-sample">
+                        <pre>   
+                            int main() {
+                                printf("Hello, world!");
+                                return 0;
+                            }
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
